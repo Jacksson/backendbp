@@ -1,0 +1,4 @@
+include ':api'
+include ':util'
+include ':microservices:customer-service'
+include ':microservices:accounts-service'
