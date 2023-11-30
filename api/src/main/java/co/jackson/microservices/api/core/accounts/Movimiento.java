@@ -6,12 +6,14 @@ import java.util.Date;
 
 @Data
 @AllArgsConstructor
-public class Movimientos {
+public class Movimiento {
 
     private Long id;
     private Date fecha;
     private String tipoMovimiento;
+    private String numeroCuenta;
     private double valor;
     private double saldo;
+    private String serviceAddress;
 
 }

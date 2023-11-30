@@ -4,11 +4,9 @@ import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
-//@RestController
-//@RequestMapping("/api/clientes")
 public interface ClienteService {
     @GetMapping
-    Flux<Cliente> getAllClientes();
+    Flux<Cliente> getAllClientes(boolean estado);
 
     @GetMapping("/{id}")
     Mono<Cliente> getClienteById(@PathVariable Long id);
